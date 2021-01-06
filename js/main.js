@@ -8,8 +8,8 @@ $(function () {
 });
 $(function () {
        $('.cuba-photo__slider__items').slick({
-              prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="../images/arrowPrev.png"></button>',
-              nextArrow: '<button type="button" class="slick-btn slick-next"><img src="../images/arrowNext.png"></button>',
+              prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/arrowPrev.png"></button>',
+              nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/arrowNext.png"></button>',
               autoplay: 3000,
               
        });
