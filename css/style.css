@@ -567,7 +567,7 @@ img {
 }
 
 .menu-item--inner {
-       width: calc(100%/12*4 - 10px);
+       width: calc(100%/12*3 - 10px);
 }
 
 .footer__copy {
