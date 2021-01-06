@@ -1,0 +1,798 @@
+*,
+*::before,
+*::after {
+       box-sizing: border-box;
+}
+
+a {
+       text-decoration: none;
+}
+
+li {
+       list-style: none;
+}
+
+body {
+       font-family: 'Lato', sans-serif;
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 28px;
+       color: #505050;
+}
+
+img {
+       width: 100%;
+}
+
+/*  */
+
+.container {
+       max-width: 1200px;
+       padding: 0 15px;
+       margin: 0 auto;
+}
+
+.inner {
+       width: calc(100%/12*10);
+       margin: 0 auto;
+       padding: 0 10px;
+}
+
+.title {
+       text-align: center;
+       font-family: 'Georgia';
+       font-size: 32px;
+       line-height: 38px;
+       margin-bottom: 22px;
+}
+
+.text {
+       margin-bottom: 10px;
+}
+
+/*  */
+
+.header__top {
+       background-image: url(../images/header-bg.jpg);
+       background-repeat: no-repeat;
+       background-position: 50% 50%;
+       background-size: cover;
+       height: 100vh;
+       padding: 40px;
+}
+
+.header__top__inner {
+       border: 2px solid #ECB84C;
+       border-bottom: none;
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       color: #FFFFFF;
+}
+
+.header__title {
+       font-weight: 700;
+       font-size: 200px;
+       line-height: 227px;
+       margin: auto;
+       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+       font-family: 'Georgia';
+}
+
+.header__text {
+       font-weight: 300;
+       font-size: 24px;
+       line-height: 26px;
+       text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+       position: relative;
+       display: flex;
+       white-space: nowrap;
+       align-items: center;
+       margin-bottom: -12px;
+}
+
+.header__text::before,
+.header__text::after {
+       content: "";
+       border-top: 2px solid #ECB84C;
+       width: 100%;
+}
+
+.header__text::before {
+       margin-right: 30px;
+}
+
+.header__text::after {
+       margin-left: 30px;
+}
+
+.header__menu {
+       text-align: center;
+       border-bottom: 1px solid rgba(208, 212, 216, .5);
+       margin-bottom: 83px;
+}
+
+.header__menu__list {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+
+.menu__btn {
+       display: none;
+}
+
+.header__menu__list__item {
+       padding: 32px 10px;
+       border-bottom: 4px solid transparent;
+       transition: border-color 0.5s;
+}
+
+.header__menu__list__item+.header__menu__list__item {
+       margin-left: 10px;
+}
+
+.header__menu__list__item__link {
+       font-weight: 700;
+       font-size: 18px;
+       line-height: 20px;
+       color: #909090;
+}
+
+/* .header__menu__list__item__link:hover {
+       border-color: #ECB84C;
+} */
+
+.hover {
+       border-color: #ECB84C;
+}
+
+/* like-vacation */
+.like-vacation {
+       margin-bottom: 72px;
+}
+
+.like-vacation__container {
+       border-bottom: 1px solid rgba(208, 212, 216, .5);
+
+}
+
+.like-vacation__inner__title {
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 36px;
+}
+
+.like-vacation__text__more {
+       color: #ecb84c;
+       font-weight: 700;
+       text-align: right;
+}
+
+.like-vacation__inner__items {
+       display: flex;
+       justify-content: space-around;
+       padding-bottom: 72px;
+}
+
+.like-vacation__item {
+       text-align: center;
+}
+
+.like-vacation__inner__item__img {
+       margin-bottom: 34px;
+       width: auto;
+}
+
+.like-vacation__inner__item__img {
+       margin-bottom: 34px;
+}
+
+/* like-vacation */
+
+/* cuba-this */
+.cuba-this {
+       margin-bottom: 100px;
+}
+
+.cuba-this__inner {
+       margin-bottom: 100px;
+}
+
+.cuba-this__inner__title {
+       margin-bottom: 64px;
+}
+
+/* Другой вариант верстки блока cuba-about */
+.cuba-about__items__item {
+       padding: 70px 0;
+       background-repeat: no-repeat;
+       background-position: 100% 50%;
+       margin-top: 100px;
+}
+
+.cuba-about__items__item:nth-child(even) {
+       background-position: 0 50%;
+}
+
+.cuba-about__items__item:nth-child(even) .cuba-about__items__item__descript {
+       margin-left: auto;
+}
+
+.cuba-about__items__item__descript {
+       max-width: 470px;
+       padding: 33px 40px;
+       position: relative;
+       background-color: rgb(255, 255, 255, .9);
+}
+
+.cuba-about__items__title {
+       font-family: 'Georgia';
+       font-size: 24px;
+       line-height: 25px;
+       color: #4e5665;
+       margin-bottom: 20px;
+}
+
+.cuba-about__items__item__descript::before,
+.cuba-about__items__item__descript::after {
+       content: "";
+       width: 33px;
+       height: 33px;
+       position: absolute;
+}
+
+.cuba-about__items__item__descript::before {
+       border-top: 2px solid #ecb84c;
+       border-left: 2px solid #ecb84c;
+       top: 19px;
+       left: 19px;
+}
+
+.cuba-about__items__item__descript::after {
+       border-bottom: 2px solid #ecb84c;
+       border-right: 2px solid #ecb84c;
+       bottom: 19px;
+       right: 19px;
+}
+
+.cuba-about__items__item:nth-child(even) .cuba-about__items__item__descript::before {
+       border-bottom: 2px solid #ecb84c;
+       border-left: 2px solid #ecb84c;
+       border-top: none;
+       bottom: 19px;
+       left: 19px;
+       top: auto;
+}
+
+.cuba-about__items__item:nth-child(even) .cuba-about__items__item__descript::after {
+       border-top: 2px solid #ecb84c;
+       border-right: 2px solid #ecb84c;
+       border-bottom: none;
+       top: 19px;
+       right: 19px;
+       bottom: auto;
+}
+
+/* Другой вариант верстки блока cuba-about */
+/* Блок cuba-about  то как я его сверстал первый раз
+.cuba-about__items__item {
+       display: flex;
+       align-items: center;
+       justify-content: end;
+       position: relative;
+}
+
+.cuba-about__items__item+.cuba-about__items__item {
+       margin-top: 100px;
+}
+
+.cuba-about__items__item:nth-child(odd) {
+       flex-direction: row-reverse;
+}
+
+.cuba-about__items__item__img {
+       max-width: 540px;
+       width: 100%
+}
+
+.cuba-about__items__item__descript {
+       max-width: 470px;
+       width: 100%;
+       position: absolute;
+       top: 50%;
+       left: 0;
+       transform: translateY(-50%);
+       height: inherit;
+       padding: 19px;
+       background-color: rgb(255, 255, 255, .9);
+}
+.cuba-about__items__title {
+       font-family: 'Georgia';
+       font-size: 24px;
+       line-height: 25px;
+       color: #4e5665;
+       padding: 14px 21px;
+       position: relative;
+}
+.cuba-about__items__title::before,
+.cuba-about__items__title::after {
+       content: "";
+       height: 2px;
+       width: 33px;
+       background-color: #ECB84C;
+       position: absolute;
+       top: 0;
+}
+.cuba-about__items__title::before {
+       left: 0;
+}
+.cuba-about__items__title::after {
+       top: 16px;
+       left: -16px;
+       transform: rotate(90deg);
+}
+.cuba-about__items__item__descript__text {
+       padding: 14px 21px;
+       position: relative;
+}
+.cuba-about__items__item__descript__text::before,
+.cuba-about__items__item__descript__text::after {
+       content: "";
+       height: 2px;
+       width: 33px;
+       background-color: #ECB84C;
+       position: absolute;
+       bottom: 0;
+}
+.cuba-about__items__item__descript__text::before {
+       right: 0;
+}
+.cuba-about__items__item__descript__text::after {
+       bottom: 16px;
+       right: -16px;
+       transform: rotate(90deg);
+}
+.cuba-about__items__title.title-right::before,
+.cuba-about__items__title.title-right::after {
+       content: "";
+       height: 2px;
+       width: 33px;
+       background-color: #ECB84C;
+       position: absolute;
+       top: 0;
+}
+.cuba-about__items__title.title-right::before {
+       right: 0;
+       left: auto;
+}
+.cuba-about__items__title.title-right::after {
+       right: -16px;
+       left: auto;
+       top: 16px;
+}
+.cuba-about__items__item__descript.descript-right {
+       right: 0;
+       left: auto;
+}
+.cuba-about__items__item__descript__text.text-right::after,
+.cuba-about__items__item__descript__text.text-right::after {
+       content: "";
+       height: 2px;
+       width: 33px;
+       background-color: #ECB84C;
+       position: absolute;
+       bottom: 0;
+}
+.cuba-about__items__item__descript__text.text-right::before {
+       right: auto;
+       left: 0;
+}
+.cuba-about__items__item__descript__text.text-right::after {
+       bottom: 16px;
+       right: -16px;
+       left: -16px;
+} */
+
+.cadilac__title {
+       margin-bottom: 38px;
+}
+
+.cadilac__img {
+       margin-bottom: 35px;
+       padding-top: 78px;
+       position: relative;
+}
+
+.cadilac__dots {
+       width: 32px;
+       height: 32px;
+       border-radius: 50%;
+       background-color: rgba(236, 184, 76, .75);
+       position: absolute;
+}
+
+.cadilac__dots__text {
+       position: absolute;
+       white-space: nowrap;
+       font-weight: 700;
+       bottom: 140px;
+       left: 120px;
+       display: none;
+}
+
+.dots--1:hover .cadilac__dots__text,
+.dots--2:hover .cadilac__dots__text,
+.dots--3:hover .cadilac__dots__text,
+.dots--4:hover .cadilac__dots__text {
+       display: block;
+}
+
+.cadilac__dots__text.text--1,
+.cadilac__dots__text.text--2,
+.cadilac__dots__text.text--4 {
+       left: 170px;
+}
+
+.dots--1 {
+       top: 190px;
+       left: 148px;
+}
+
+.dots--2 {
+       top: 190px;
+       left: 482px;
+}
+
+.dots--3 {
+       top: 155px;
+       right: 380px;
+}
+
+.dots--4 {
+       bottom: 38px;
+       right: 300px;
+}
+
+.dots--1::before,
+.dots--2::before,
+.dots--3::before,
+.dots--4::before {
+       content: "";
+       position: absolute;
+       background-image: url(../images/line.svg);
+       background-repeat: no-repeat;
+       width: 243px;
+       height: 121px;
+       bottom: 15px;
+       left: 13px;
+       display: none;
+}
+
+.dots--1:hover::before,
+.dots--2:hover::before,
+.dots--3:hover::before,
+.dots--4:hover::before {
+       display: block;
+}
+
+.dots--1::after,
+.dots--2::after,
+.dots--3::after,
+.dots--4::after {
+       content: "";
+       position: absolute;
+       width: 10px;
+       height: 10px;
+       border-radius: 50%;
+       background-color: #FFD600;
+       left: 50%;
+       top: 50%;
+       transform: translate(-50%, -50%)
+}
+
+.cadilac__text__inner {
+       margin-bottom: 50px;
+}
+
+.cuba-cadilac,
+.cuba-photo-container {
+       border-bottom: 1px solid rgba(208, 212, 216, .5);
+}
+
+/* cuba-this */
+/* cuba-photo */
+.cuba-photo__text {
+       margin-bottom: 56px;
+       display: flex;
+       flex-direction: column;
+}
+
+.cuba-photo__text::after {
+       content: "";
+       width: 270px;
+       height: 1px;
+       background-color: rgba(208, 212, 216, .5);
+       margin: 48px auto 0;
+}
+
+.cuba-photo__slider__items {
+       margin: 0 auto;
+       max-width: 640px;
+       box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.3);
+}
+
+.slick-arrow {
+       outline: none;
+       border: 0;
+       border-radius: 50%;
+       position: absolute;
+       top: 50%;
+       background-color: #ECB84C;
+       transform: translateY(-50%);
+       width: 40px;
+       height: 40px;
+       box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.3);
+}
+
+.slick-arrow img {
+       width: auto;
+}
+
+.cuba-photo__slider {
+       margin-bottom: 80px;
+}
+
+.slick-btn.slick-prev {
+       left: -25px;
+       z-index: 3;
+}
+
+.slick-btn.slick-next {
+       right: -25px;
+}
+
+/* cuba-photo */
+
+/* footer */
+.footer {
+       background-color: #F2F2F2;
+       padding: 56px 0 32px;
+}
+
+.footer__menu__inner {
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+}
+
+.menu-item--inner {
+       width: calc(100%/12*4 - 10px);
+}
+
+.footer__copy {
+       margin-top: 40px;
+       text-align: center;
+}
+
+.footer__title {
+       font-weight: 700;
+       font-size: 15px;
+       line-height: 20px;
+       color: #4E5665;
+       margin-bottom: 20px;
+       text-transform: uppercase;
+}
+
+.footer__menu__list+.footer__menu__list {
+       margin-top: 8px;
+}
+
+.footer__menu__list__link {
+       font-family: 'Lato', sans-serif;
+       font-weight: 400;
+       font-size: 14px;
+       line-height: 19px;
+       color: #505050;
+}
+
+.footer__menu__list__link:hover {
+       color: #000000
+}
+
+/* footer */
+
+
+
+@media(max-width:1200px) {
+       .cadilac__dots {
+              display: none;
+       }
+}
+
+@media(max-width: 799px) {
+
+       .header__menu {
+              position: relative;
+       }
+
+       .menu__btn {
+              display: block;
+              cursor: pointer;
+              width: 50px;
+              position: absolute;
+              top: 30px;
+              right: 40px;
+              z-index: 3;
+              margin: auto 0;
+       }
+
+       .menu__btn span {
+              display: block;
+              height: 2px;
+              background-color: #ecb84c;
+              margin-bottom: 10px;
+       }
+
+       .header__menu__list {
+              display: none;
+              position: absolute;
+              width: 100%;
+              background-color: white;
+              padding-top: 50px;
+
+       }
+
+       .header__menu__list__item {
+              padding: 20px;
+              border-bottom: 4px solid #ECB84C;
+       }
+
+       .header__menu__list__item+.header__menu__list__item {
+              margin-left: 0px;
+       }
+
+       .header__menu__list__item__link {
+              display: inline-block;
+       }
+}
+
+@media(max-width:700px) {
+       .like-vacation__inner__items {
+              flex-wrap: wrap;
+       }
+
+       .like-vacation__item {
+              text-align: center;
+              margin: 0 0 30px 0;
+              width: calc(100%/12*6);
+       }
+}
+
+@media(max-width:660px) {
+       .header__title {
+              font-size: 120px;
+              line-height: 170px;
+       }
+
+       .header__text {
+              font-size: 16px;
+       }
+       .menu-item--inner {
+              width: calc(100%/12*6 - 10px);
+              margin-bottom: 30px;
+          }
+          .footer {
+              padding: 32px 0 ;
+          }
+          .footer__copy {
+              margin-top: 0px;
+          }
+}
+
+@media(max-width:500px) {
+       .cuba-this__inner__title {
+              margin-bottom: 20px;
+       }
+
+       .cuba-about__items__item {
+              background-image: none !important;
+       }
+
+       .cuba-about__items__item {
+              padding: 0;
+              margin-top: 0px;
+       }
+       .slick-arrow{
+              display: none;
+       }
+       .menu-item--inner {
+              width: 100%;
+          }
+          .footer__menu__inner {
+              text-align: center;
+          }
+}
+
+@media(max-width:440px) {
+       .header__top {
+              padding: 20px;
+       }
+
+       .header__title {
+              font-size: 80px;
+       }
+
+       .header__text::before {
+              margin-right: 5px;
+       }
+
+       .header__text::after {
+              margin-left: 5px;
+       }
+
+       .like-vacation__item {
+              width: 100%;
+       }
+
+       .cuba-about__items__item__descript {
+              padding: 26px 28px;
+       }
+
+       .cuba-about__items__title {
+              font-size: 18px;
+       }
+       .cuba-about__items__item__descript::after {
+              bottom: 10px;
+              right: 10px;
+          }
+          .cuba-about__items__item__descript::before {
+              top: 10px;
+              left: 10px;
+          }
+          .cuba-about__items__item:nth-child(even) .cuba-about__items__item__descript::before {
+              bottom: 10px;
+              left: 10px;
+          }
+          .cuba-about__items__item:nth-child(even) .cuba-about__items__item__descript::after {
+              top: 10px;
+              right: 10px;
+          }
+
+}
+
+@media(max-width:320px) {
+       .header__top {
+              padding: 10px;
+       }
+
+       .menu__btn {
+              width: 40px;
+              top: 20px;
+              right: 10px;
+       }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(min-width:800px) {
+       .header__menu__list {
+              display: flex !important;
+              justify-content: center;
+              align-items: center;
+       }
+
+}
