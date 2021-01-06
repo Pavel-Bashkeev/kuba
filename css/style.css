@@ -546,10 +546,12 @@ img {
 .slick-btn.slick-prev {
        left: -25px;
        z-index: 3;
+       cursor: pointer;
 }
 
 .slick-btn.slick-next {
        right: -25px;
+       cursor: pointer;
 }
 
 /* cuba-photo */
